@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
       <h1>Employee Directory</h1>
       <p>
        PLease enter an employees first name: 
@@ -27,6 +28,8 @@ function App() {
       <Card employees={employeesToRender} />
       </Col>
       </Row>
+=======
+>>>>>>> 854f273a7a6419ceb6701f7bf507bf53e6f06ec9
     </div>
   );
 }
