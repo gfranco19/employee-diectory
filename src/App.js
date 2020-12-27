@@ -1,26 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import FilterInput from "./FilterInput";
+import Card from "./components/card/Card";
+import { getEmployees } from "./utils/API";
+import Col from "./components/col/Col";
+import Row from "./components/row/Row";
+
 
 function App() {
+  const [initialEmployees, updateAvailableEmployees] = useState([]);
+  const [employeesToRender, updateEmployeesToRender] = useState([]);
+
+  useEffect(() => {
+    getEmployees().then(({ data: { results } }) => updateAvailableEmployees(results));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        > 
-        
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
 
 export default App;
+//test
