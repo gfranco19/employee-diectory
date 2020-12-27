@@ -16,7 +16,17 @@ function App() {
 
   return (
     <div className="App">
-
+      <h1>Employee Directory</h1>
+      <p>
+       PLease enter an employees first name: 
+      <FilterInput employees={initialEmployees} updateEmployees={updateEmployeesToRender} />
+      </p>
+      <Row>
+        
+        <Col size="md-12">
+      <Card employees={employeesToRender} />
+      </Col>
+      </Row>
     </div>
   );
 }
