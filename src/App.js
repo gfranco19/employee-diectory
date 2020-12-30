@@ -22,7 +22,6 @@ function App() {
       <FilterInput employees={initialEmployees} updateEmployees={updateEmployeesToRender} />
       </p>
       <Row>
-        
         <Col size="md-12">
       <Card employees={employeesToRender} />
       </Col>
