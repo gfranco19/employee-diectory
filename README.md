@@ -20,4 +20,4 @@ The user should be able to:
 
 ![ED](https://user-images.githubusercontent.com/68441056/103445330-7d9feb00-4c27-11eb-8c5c-c80872d19af7.gif)
 
-## https://gfranco19.github.io/employee-directory/
+## https://gfranco19.github.io/employee-diectory/
